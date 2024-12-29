@@ -4,7 +4,12 @@
     "customizations": {
         "vscode": {
             "extensions": [
-                "jnoortheen.nix-ide"
+                "jnoortheen.nix-ide",
+                "tamasfe.even-better-toml",
+                "charliermarsh.ruff",
+                "ms-python.python",
+                "ms-python.debugpy",
+                "ms-python.vscode-pylance"
             ]
         }
     }
