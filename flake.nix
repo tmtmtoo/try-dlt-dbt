@@ -16,6 +16,7 @@
           buildInputs = [
             pkgs.uv
             pkgs.duckdb
+            pkgs.just
           ];
           shellHook = ''
             uv venv
