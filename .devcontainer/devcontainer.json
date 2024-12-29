@@ -9,7 +9,8 @@
                 "charliermarsh.ruff",
                 "ms-python.python",
                 "ms-python.debugpy",
-                "ms-python.vscode-pylance"
+                "ms-python.vscode-pylance",
+                "vscodevim.vim"
             ]
         }
     }
