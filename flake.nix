@@ -15,6 +15,7 @@
         devShell = pkgs.mkShell {
           buildInputs = [
             pkgs.uv
+            pkgs.duckdb
           ];
           shellHook = ''
             uv venv
