@@ -64,7 +64,9 @@ def github_source(access_token: Optional[str] = dlt.secrets.value) -> Any:
                         "since": {
                             "type": "incremental",
                             "cursor_path": "updated_at",
-                            "initial_value": pendulum.today().subtract(days=30).to_iso8601_string(),
+                            "initial_value": pendulum.today()
+                            .subtract(days=30)
+                            .to_iso8601_string(),
                         },
                     },
                 },
@@ -102,7 +104,7 @@ def github_source(access_token: Optional[str] = dlt.secrets.value) -> Any:
 def load_github() -> None:
     pipeline = dlt.pipeline(
         pipeline_name="rest_api_github",
-        destination='duckdb',
+        destination="duckdb",
         dataset_name="rest_api_data",
     )
 
@@ -113,7 +115,7 @@ def load_github() -> None:
 def load_pokemon() -> None:
     pipeline = dlt.pipeline(
         pipeline_name="rest_api_pokemon",
-        destination='duckdb',
+        destination="duckdb",
         dataset_name="rest_api_data",
     )
 
@@ -154,5 +156,5 @@ def load_pokemon() -> None:
 
 
 if __name__ == "__main__":
-    load_github()
+    # load_github()
     load_pokemon()
