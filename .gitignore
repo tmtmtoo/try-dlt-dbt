@@ -275,3 +275,7 @@ $RECYCLE.BIN/
 *.duckdb
 
 secrets.*
+
+target/
+dbt_packages/
+logs/
